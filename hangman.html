@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="hangman.css">
+</head>
+<body>
+
+    <h1>Hangman!</h1>
+    <div id="wrapper">
+    <p>How to play:</p>
+    <ul>
+        <li>Computer will pick a random word for the player to guess</li>
+        <li>The player will guess a letter that the word may have</li>
+        <li>Each correct guess will be revealed</li>
+        <li>Each INCORRECT guess will add to the hangman</li>
+        <li>The player will have 6 failed attempts to guess a correct letter before the hangman is complete</li>
+    </ul>
+    <p>Have fun!  And try not to kill too many people.</p>
+    </div>
+
+    <button id="start">Start!</button><br>
+    <form id="form">
+        <fieldset id="game" style="width: 800px">
+            <legend>Hangman</legend>
+            <span id="hangmanImage"></span>
+            <br>
+            <span id="error"></span>
+            <br>
+            <label for="letter">Guess a Letter</label>
+            <input type="text" id="letter" style="width: 5ch" placeholder="letter">
+            <button type="button" id="guess">Guess</button><br><br>
+            <label for="word">Guess the word</label>
+            <input type="text" id="word" style="width: 10ch" placeholder="word">
+            <button type="button" id="wordGuess">Guess</button><br>
+            <br><br><br><br>
+            <h2 id="winLoss"></h2>
+            <br><br><br><br><br>
+            <span id="printer"></span><br><br>
+            <span id="wrongTest"></span>
+
+
+
+        </fieldset>
+    </form>
+
+
+
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="hangman.js"></script>
+</body>
+</html>
